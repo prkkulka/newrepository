@@ -1,0 +1,46 @@
+{
+	"name": "targetFinanceentry",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "COMPANYNUMBER",
+				"type": "varchar"
+			},
+			{
+				"name": "ACCOUNTNUMBER",
+				"type": "varchar"
+			},
+			{
+				"name": "LOCALSPEC2NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "ENTRYDATE",
+				"type": "varchar"
+			},
+			{
+				"name": "DEBITBASE",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 2
+			},
+			{
+				"name": "CREDITBASE",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "FINANCEENTRY"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

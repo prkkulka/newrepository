@@ -1,0 +1,58 @@
+{
+	"name": "Targetdatabase",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "JOBNUMBER",
+				"type": "varchar"
+			},
+			{
+				"name": "COMPANYNUMBER",
+				"type": "varchar"
+			},
+			{
+				"name": "LOCALSPEC2NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "ENTRYDATE",
+				"type": "varchar"
+			},
+			{
+				"name": "REVENUERECOGNIZEDBASE",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 2
+			},
+			{
+				"name": "COSTPRICEREG",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 2
+			},
+			{
+				"name": "CURRENCY",
+				"type": "decimal",
+				"precision": 5,
+				"scale": 0
+			},
+			{
+				"name": "TRANSACTIONTIMESTAMP",
+				"type": "smalldatetime",
+				"precision": 16,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "JOBENTRY"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

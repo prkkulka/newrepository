@@ -1,0 +1,32 @@
+{
+	"name": "targetpopupitem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "POPUPTYPENAME",
+				"type": "varchar"
+			},
+			{
+				"name": "POPUPITEMNUMBER",
+				"type": "decimal",
+				"precision": 20,
+				"scale": 0
+			},
+			{
+				"name": "NAME",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "POPUPITEM"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
